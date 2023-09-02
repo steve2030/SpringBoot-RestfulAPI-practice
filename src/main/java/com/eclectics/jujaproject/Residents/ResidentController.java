@@ -1,3 +1,5 @@
+
+
 package com.eclectics.jujaproject.Residents;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,9 +22,11 @@ public class ResidentController {
         return residentService.getResidents();
 
     }
-    @RequestMapping("/residents/{ResidentId}")
-    public getResident(@PathVariable String ResidentId){
+    @GetMapping("{ResidentId}")
+
+    public String getResident(@PathVariable String ResidentId){
         return residentService.getResident(ResidentId);
+
 
         }
 

@@ -20,7 +20,7 @@ public class ResidentService {
     }
 
     public Resident getResident(String ResidentId){
-        return residents.stream().filter(t->t.getResidentId().equals(ResidentId).findFirst().get();
+        return residents.stream().filter(t->t.getResidentId().equals(ResidentId).findFirst().get());
 
 
     }
