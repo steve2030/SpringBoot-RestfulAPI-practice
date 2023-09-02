@@ -16,10 +16,12 @@ public class ResidentService {
     );
     public List<Resident>getResidents(){
 
-
-
-
-
         return residents;
+    }
+
+    public Resident getResident(String ResidentId){
+        return residents.stream().filter(t->t.getResidentId().equals(ResidentId).findFirst().get();
+
+
     }
 }
